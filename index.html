@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrianne - The Gay Slayer of Makati</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-6">
+                <div class="text-6xl mb-4">👑</div>
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 pulse-animation">ARRIANNE</h1>
+                <p class="text-2xl md:text-3xl font-light mb-6">The Gay Slayer of Makati</p>
+                <p class="text-lg md:text-xl opacity-90 max-w-2xl mx-auto">Serving looks, serving attitude, serving EVERYTHING in the heart of Makati City</p>
+            </div>
+            <button onclick="scrollToSection('about')" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300 transform hover:scale-105">
+                Discover the Legend
+            </button>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About the Legend</h2>
+                <div class="w-24 h-1 bg-purple-500 mx-auto mb-8"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center">
+                    <div class="text-8xl mb-6">💅</div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Fierce & Fabulous</h3>
+                    <p class="text-gray-600 leading-relaxed">Arrianne dominates the Makati scene with unmatched style, wit, and charisma. Known for serving the most iconic looks and unforgettable moments.</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-8xl mb-6">🏙️</div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Makati Royalty</h3>
+                    <p class="text-gray-600 leading-relaxed">From BGC to Poblacion, Arrianne's presence is felt throughout the city. A true icon who knows how to work every room and own every street.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-20 bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">By the Numbers</h2>
+                <p class="text-xl opacity-90">The impact of a true icon</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 text-center">
+                <div class="card-hover bg-white bg-opacity-20 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2" id="counter1">0</div>
+                    <p class="text-lg">Iconic Looks Served</p>
+                </div>
+                
+                <div class="card-hover bg-white bg-opacity-20 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2" id="counter2">0</div>
+                    <p class="text-lg">Hearts Slayed</p>
+                </div>
+                
+                <div class="card-hover bg-white bg-opacity-20 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2" id="counter3">0</div>
+                    <p class="text-lg">Makati Spots Conquered</p>
+                </div>
+                
+                <div class="card-hover bg-white bg-opacity-20 rounded-lg p-8 backdrop-blur-sm">
+                    <div class="text-4xl font-bold mb-2" id="counter4">0</div>
+                    <p class="text-lg">Years of Slaying</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Hall of Fame</h2>
+                <p class="text-xl text-gray-600">Legendary moments captured</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card-hover bg-white rounded-lg p-8 text-center shadow-lg">
+                    <div class="text-6xl mb-4">🌟</div>
+                    <h3 class="text-xl font-semibold mb-3">The BGC Takeover</h3>
+                    <p class="text-gray-600">That legendary night when Arrianne owned every rooftop bar in Bonifacio Global City</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-lg p-8 text-center shadow-lg">
+                    <div class="text-6xl mb-4">💃</div>
+                    <h3 class="text-xl font-semibold mb-3">Poblacion Princess</h3>
+                    <p class="text-gray-600">Serving looks and attitude in the hippest district of Makati</p>
+                </div>
+                
+                <div class="card-hover bg-white rounded-lg p-8 text-center shadow-lg">
+                    <div class="text-6xl mb-4">👸</div>
+                    <h3 class="text-xl font-semibold mb-3">Ayala Avenue Icon</h3>
+                    <p class="text-gray-600">Making the business district fabulous, one strut at a time</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-8">Ready to Witness the Slaying?</h2>
+            <p class="text-xl mb-8 opacity-90">Follow Arrianne's legendary journey through Makati</p>
+            
+            <div class="flex flex-wrap justify-center gap-4 mb-8">
+                <button onclick="showAlert('Instagram')" class="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-105">
+                    📸 Instagram
+                </button>
+                <button onclick="showAlert('TikTok')" class="bg-black hover:bg-gray-800 px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-105">
+                    🎵 TikTok
+                </button>
+                <button onclick="showAlert('Twitter')" class="bg-blue-400 hover:bg-blue-500 px-6 py-3 rounded-full font-semibold transition duration-300 transform hover:scale-105">
+                    🐦 Twitter
+                </button>
+            </div>
+            
+            <p class="text-lg opacity-80">Spotted Arrianne in Makati? Share your story!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <div class="text-4xl mb-4">👑</div>
+            <p class="text-lg mb-4">Arrianne - The Gay Slayer of Makati</p>
+            <p class="text-gray-400">Serving excellence since day one</p>
+            <div class="mt-8 text-sm text-gray-500">
+                <p>Made with 💜 for the most iconic person in Makati</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling function
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Counter animation
+        function animateCounter(elementId, targetNumber, duration = 2000) {
+            const element = document.getElementById(elementId);
+            const increment = targetNumber / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= targetNumber) {
+                    current = targetNumber;
+                    clearInterval(timer);
+                }
+                element.textContent = Math.floor(current);
+            }, 16);
+        }
+
+        // Social media alert
+        function showAlert(platform) {
+            alert(`Follow Arrianne on ${platform} for the latest slaying updates! 💅✨`);
+        }
+
+        // Initialize counters when page loads
+        window.addEventListener('load', () => {
+            // Add a delay to make the animation more noticeable
+            setTimeout(() => {
+                animateCounter('counter1', 999);
+                animateCounter('counter2', 10000);
+                animateCounter('counter3', 50);
+                animateCounter('counter4', 5);
+            }, 500);
+        });
+
+        // Add scroll effect for header
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.transform = 'translateY(-10px)';
+                header.style.opacity = '0.95';
+            } else {
+                header.style.transform = 'translateY(0)';
+                header.style.opacity = '1';
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9660326f25aabc40',t:'MTc1MzY2MTg4My4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
